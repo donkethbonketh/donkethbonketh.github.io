@@ -1,3 +1,59 @@
 theme: jekyll-theme-minimal
 title: Phaethon Math
 description: Flying too close to the sun.
+# -----------------------
+# Site Settings
+# -----------------------
+#title: Phaethon Math
+#description: "Mathematics notes, tutorials, and resources."
+#url: "https://yourusername.github.io" # Replace with your URL
+#baseurl: "/phaethon-math" # If your repo is named 'phaethon-math', keep this. If it is 'yourusername.github.io', leave this blank: ""
+#repository: "yourusername/phaethon-math" # Replace with your repo path
+author:
+  name: "Donk"
+  bio: "I hate math. Know thy enemy."
+  location: "The Abyss"
+
+# -----------------------
+# Theme Settings
+# -----------------------
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "air" # Options: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# -----------------------
+# Math & Markdown Settings
+# -----------------------
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  math_engine: mathjax # Tells Jekyll to respect math delimiters
+
+# -----------------------
+# Plugins (Standard GitHub Pages allowlist)
+# -----------------------
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-gist
+
+# -----------------------
+# Site Structure
+# -----------------------
+defaults:
+  # Default settings for posts and pages
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      # ENABLE MATH GLOBALLY FOR POSTS
+      mathjax: true
